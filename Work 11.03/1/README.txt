@@ -1,0 +1,1 @@
+prints a random three-digit number and removes the second digit of that number.
