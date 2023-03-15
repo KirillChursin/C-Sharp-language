@@ -10,13 +10,13 @@
 Console.WriteLine($" enter the values of the first coordinate x, y, c: ");
 double x = Convert.ToDouble(Console.ReadLine()); // задаем координату х
 double y = Convert.ToDouble(Console.ReadLine()); // задаем координату у
-double c = Convert.ToDouble(Console.ReadLine());
+double c = Convert.ToDouble(Console.ReadLine()); // задаем координату c
 
 // // задаем координату второй точки
 Console.WriteLine($" enter the values of the second coordinate x, y, c: ");
 double x1 = Convert.ToDouble(Console.ReadLine()); // задаем координату х1
 double y1 = Convert.ToDouble(Console.ReadLine()); // задаем координату у1
-double c1 = Convert.ToDouble(Console.ReadLine()); // задаем координату у1
+double c1 = Convert.ToDouble(Console.ReadLine()); // задаем координату c1
 
 // double s = Math.Sqrt((x-x1)*(x-x1)+(y-y1)*(y-y1)+(c-c1)*(c-c1));
 
