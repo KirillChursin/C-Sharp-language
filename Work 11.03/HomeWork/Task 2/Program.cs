@@ -16,7 +16,7 @@ while (number>999)
 if (number>99)
 {
     int y = number%10;
-    Console.WriteLine($"Second digit of the number = {y}");
+    Console.WriteLine($"Third digit of the number = {y}");
 }
 else
 {
