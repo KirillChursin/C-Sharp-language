@@ -7,27 +7,6 @@
 // 9012 -> 12
 
 
-int writeRead (string message)
-{
-    Console.WriteLine(message);
-    int result = Convert.ToInt32(Console.ReadLine());
-    return result;
-}
-
-
-int sumAllDigit (int arg)
-{
-    int result = 0;
-    while (arg>0)
-    {
-        result += arg % 10;
-        arg = arg / 10;
-    }
-    return result;
-}
-
-int numb = writeRead($"Enter number");
-Console.WriteLine(sumAllDigit(numb));
 
 
 // Console.WriteLine($"Enter number");
@@ -40,11 +19,23 @@ int myNumb (string message)
 }
 int numb = myNumb($"Enter number");
 
-int result = 0;
-while (numb > 0)
-{
-    result = result + numb % 10;
-    numb = numb / 10;
-}
-Console.WriteLine(result);
+// int result = 0;
+// while (numb > 0)
+// {
+//     result = result + numb % 10;
+//     numb = numb / 10;
+// }
+// Console.WriteLine(result); превращаем все это в метод сохраняя в результат сумму цифр в числе.
 
+int sumNember (int arg)
+{
+    int result = 0;
+    while (arg > 0) // создаем цикл что бы дальше перебирать все цифры числа.
+    {
+        result += arg % 10; // %10 показывает последнюю цифру числа и суммирует ее с result, где изначально result = 0, потом 0 + пеоследння цифра числа и так, пока не переберутся все цифры числа.
+        arg = arg / 10; // /10 присваивает в arg число без последней цифры числа.
+    }
+    return result;
+}
+
+Console.WriteLine($"sum elements your number = {sumNember(numb)}");
