@@ -27,7 +27,7 @@ int numb = myNumb($"Enter number");
 // }
 // Console.WriteLine(result); превращаем все это в метод сохраняя в результат сумму цифр в числе.
 
-int sumNember (int arg)
+int sumNumber (int arg)
 {
     int result = 0;
     while (arg > 0) // создаем цикл что бы дальше перебирать все цифры числа.
@@ -38,4 +38,4 @@ int sumNember (int arg)
     return result;
 }
 
-Console.WriteLine($"sum elements your number = {sumNember(numb)}");
+Console.WriteLine($"sum elements your number = {sumNumber(numb)}");
