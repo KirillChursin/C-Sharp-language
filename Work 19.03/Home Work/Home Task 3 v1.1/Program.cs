@@ -1,7 +1,6 @@
-﻿//  Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементом массива.
+﻿//  Задайте массив вещественных чисел. Найдите разницу между индексом  максимального и минимального элементов массива.
 
 // [3 7 22 2 78] -> 76
-
 
 int message(string message)
 {
@@ -28,29 +27,37 @@ void print(int[] arg)
     Console.WriteLine($"]");
 }
 
-int Max(int[] arg)
+int MaxIndex(int[] arg)
 {
     int max = 0;
     for (int i = 0; i < arg.Length; i++)
     {
         if (arg[i] > arg[max]) max = i;
     }
-    return arg[max];
+    return max;
 }
 
-int Min(int[] arg)
+int MinIndex(int[] arg)
 {
     int min = 0;
     for (int i = 0; i < arg.Length; i++)
     {
         if (arg[i] < arg[min]) min = i;
     }
-    return arg[min];
+    return min;
 }
 
-int difference (int arg1, int arg2)
+int difference(int arg1, int arg2)
 {
-    int result = arg2 - arg1;
+    int result = 0;
+    if (arg2 > arg1)
+    {
+        result = arg2 - arg1;
+    }
+    if (arg2 < arg1)
+    {
+        result = arg1 -arg2;
+    }
     return result;
 }
 
@@ -63,8 +70,8 @@ random(array);
 print(array);
 
 Console.WriteLine();
-int max = Max(array);
-int min = Min(array);
+int max = MaxIndex(array);
+int min = MinIndex(array);
 Console.WriteLine($"array max element = {max}");
 
 Console.WriteLine();
