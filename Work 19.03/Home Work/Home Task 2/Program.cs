@@ -47,8 +47,8 @@ int even (int[] arg)
 int length = message($"Enter array length number");
 int[] array = new int [length];
 random(array);
-Console.Write.Line();
+Console.WriteLine();
 print(array);
 int sumElementEvenPos = even(array);
 Console.WriteLine($"Sum elements even index position = {sumElementEvenPos}");
-Console.Write.Line();
+Console.WriteLine();
