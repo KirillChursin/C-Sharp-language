@@ -50,7 +50,15 @@ int Min(int[] arg)
 
 int difference (int arg1, int arg2)
 {
-    int result = arg2 - arg1;
+    int result = 0;
+    if (arg2 > arg1)
+    {
+        result = arg2 - arg1;
+    }
+    if (arg2 < arg1)
+    {
+        result = arg1 -arg2;
+    }
     return result;
 }
 
