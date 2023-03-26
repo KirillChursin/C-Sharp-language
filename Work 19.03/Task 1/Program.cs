@@ -17,7 +17,7 @@ int numb (string message)
 }
 int arrayLength = numb($"Enter array length number");
 
-int[] array = new int[arrayLength];
+
 
 void random (int[] arg)
 {
@@ -26,7 +26,6 @@ void random (int[] arg)
         arg[i] = new Random().Next(-9,10);
     } 
 }
-random(array);
 
 void print(int [] arg)
 {   Console.Write($"[ ");
@@ -36,7 +35,6 @@ void print(int [] arg)
     }
     Console.Write($"]");
 }
-print(array);
 
 int sumPlus (int[] arg)
 {
@@ -64,6 +62,10 @@ int sumMinus (int[] arg)
     return result;
 }
 
+int[] array = new int[arrayLength];
+print(array);
+random(array);
+print(array);
 Console.WriteLine();
 int sumPozitive = sumPlus(array);
 Console.WriteLine(sumPozitive);
